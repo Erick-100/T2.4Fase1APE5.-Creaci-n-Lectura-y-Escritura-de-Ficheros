@@ -25,9 +25,7 @@ APE5_ManejoDeArchivos/
 │
 ├── .gitignore
 ├── README.md
-└── src/
-    └── com/
-        └── ejercicios/
-            ├── Ejercicio1CrearFichero.java
+└── ejercicios/
+   ├── Ejercicio1CrearFichero.java
             ├── Ejercicio2EscribirFichero.java
             └── Ejercicio3EliminarFichero.java
