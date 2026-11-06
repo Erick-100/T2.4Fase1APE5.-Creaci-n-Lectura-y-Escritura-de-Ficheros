@@ -1,0 +1,23 @@
+import java.io.File;
+import java.io.IOException;
+
+public class Ejercicio1 {
+    public static void main(String[] args) {
+        File archivo = new File("datos/prueba.txt");
+
+        if (!archivo.exists()) {
+            try {
+                if (archivo.createNewFile()) {
+                    System.out.println("Archivo creado.");
+                }
+            } catch (IOException e) {
+                System.out.println("Error de E/S: " + e.getMessage());
+            }
+        } else {
+            System.out.println("El archivo ya existía.");
+        }
+
+        System.out.println("Nombre: " + archivo.getName());
+        System.out.println("Ruta: " + archivo.getPath());
+    }
+}
